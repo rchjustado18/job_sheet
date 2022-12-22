@@ -210,5 +210,5 @@ a.job__search-btn {
 }
 .job__input-icon i {
     font-size: 34px;
-	color: #D4D4D4;
+	color: #D4D4D4 !important;
 }
