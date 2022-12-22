@@ -1,0 +1,338 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+/*** Global Styles ***/
+a.elementor-button-link {
+    text-decoration: none !important;
+}
+
+
+
+
+/*** Blogs ***/
+.latest__blog-image {
+    background-repeat: no-repeat !important;
+    height: 250px;
+    background-size: cover !important;
+    background-position: center center !important;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.latest__blog-container {
+    display: flex;
+    gap: 60px;
+}
+.latest__blog-col h3 {
+    height: 80px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
+.latest__blog-col {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    box-shadow: 0px 3px 13px -1px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+}
+.latest__blog-wrap {
+    padding: 0 25px 25px;
+	font-family: "Raleway", Sans-serif;
+}
+.latest__blog-wrap p{
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+}
+.latest__blog-wrap a {
+    color: #0A7CA7;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+	font-weight: 500;
+	font-size: 16px;
+}
+.latest__blog-container:before {
+    content: '';
+    display: block;
+    background: url(https://jobsearchspreadsheet.staging.jibberjobber.com/wp-content/uploads/2022/12/squares.png);
+    width: 275px;
+    height: 212px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top: -60px;
+    left: -55px;
+}
+/*** End of Blogs ***/
+
+#menu-main-menu li#menu-item-25{
+	min-height: 45px;
+}
+#menu-main-menu li#menu-item-25 a {
+    font-size: 18px !important;
+}
+
+
+
+
+
+.ekit-template-content-header{
+	position: fixed;
+    z-index: 99;
+    width: 100%;
+	top: 15px;
+}
+.header-bg-image{
+	background-image:url('/wp-content/uploads/2022/12/header-background.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+	background-position: center;
+	
+}
+.page-header{
+	display:none;
+}
+
+/* *********** HEADER ************/
+
+#menu-main-menu{
+	    align-items: center;
+}
+#menu-main-menu  li{
+	min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+#menu-main-menu  li#menu-item-25{
+	border: #fff solid 1px;
+    border-radius: 4px;
+    width: 169px;
+	justify-content: center;
+}
+#menu-main-menu  li.active a{
+	color:#fff;	
+}
+#menu-main-menu  li.active:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    top: -23px;
+}
+#menu-main-menu .sticky-header .elementor-sticky--effects {
+	background-color: rgba(244, 245, 248, .8);
+	box-shadow: 0px 4px 33px 1px rgba(0, 0, 0, .07);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+/* *********** FOOTER ************/
+.footer-wrapper .elementor-widget-wrap  {
+	padding: 0!important;
+}
+.footer-links .elementskit-navbar-nav-default .elementskit-navbar-nav {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.footer-links .elementskit-navbar-nav-default .elementskit-navbar-nav>li>a {
+	padding: 0 !important;
+}
+
+/* *********** Home  ************/
+.category-numbers .elementor-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.newsletter__wrapper {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.newsletter__container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 91px;
+    justify-content: space-between;
+    align-items: center;
+	width: 597px;
+	position: relative;
+}
+
+.newsletter__container input[type=email] {
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+    
+}
+.newsletter__button input, .newsletter__button .newsletter__button [type=button], .newsletter__button [type=submit], .newsletter__button button {
+    border: none;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-image: url(https://jobsearchspreadsheet.staging.jibberjobber.com/wp-content/uploads/2022/12/Email-Send.svg), linear-gradient(#9DDAF3, #0C7EA8);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+.newsletter__button input .wpcf7-submit {
+ 	background-image: linear-gradient(#9DDAF3, #0C7EA8);	
+}
+.newsletter__email {
+	width: 100%;
+	padding: 10px;
+}
+.newsletter__button {
+    padding: 10px;
+    position: absolute;
+    right: 0;
+}
+.newsletter__button  .wpcf7-spinner {
+    display: none;
+}
+.wpcf7-not-valid-tip {
+    position: absolute;
+    left: 23px;
+    margin-top: 2px;
+    color: #fff;
+    font-weight: bold;
+}
+.wpcf7-response-output {
+    width: 597px;
+    margin: 40px auto 0 !important;
+}
+/* *********** About Us ************/
+.category-hover {
+	display: none;
+}
+.category-wrapper .elementskit-info-image-box{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	min-height: 297px;
+	height: 100%;
+}
+.category-wrapper .elementor-container {
+	gap: 60px;
+}
+.category-wrapper .elementor-container:hover .category-hover {
+	display: block;
+}
+/* *********** Contact Us ************/
+.contact-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-form__wrapper input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    min-height: 60px;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+	font-family: 'Raleway';
+    margin-bottom: 26px;
+    width: 95%;
+}
+.contact-form__wrapper .contact-form__column:first-child {
+	width: 100%;
+    text-align: start;
+}
+.contact-form__wrapper textarea {
+	height: 145px;
+}
+.contact-form__wrapper input.wpcf7-form-control.has-spinner.wpcf7-submit { 
+    background: #1CBD76;
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 12px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+.contact-form__wrapper .contact-form__column {
+    width: 100%;
+    text-align: end;
+}
+.contact-form__wrapper .contact-form__button {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/*  Responsive  1024px */
+@media screen and (max-width: 1024px) {
+	.header-bg-image {
+    	background-size: cover;
+	}
+}
+/*  Responsive  768px */
+@media screen and (max-width: 768px) {
+	.newsletter__container {
+    	width: 450px;
+	}
+	.newsletter__container input[type=email] {
+   		height: 70px;
+	}
+	.contact-form__wrapper {
+    	flex-direction: column;
+	}
+	.contact-form__wrapper .contact-form__column:first-child {
+   	 	text-align: center;
+	}	
+	.contact-form__wrapper .contact-form__column {
+    	text-align: center;
+	}	
+	
+	.header-bg-image {
+    	background-size: cover;
+	}
+}
+
+/*  Responsive  414px */
+@media screen and (max-width: 414px) {
+	.newsletter__container input[type=email] {
+   	 	height: 70px;
+    	font-size: 14px;
+	}
+	.newsletter__container {
+    	width: 300px;
+	}
+	.newsletter__button input, .newsletter__button .newsletter__button [type=button], .newsletter__button [type=submit], .newsletter__button button {
+    	width: 40px;
+    	height: 40px;
+    	background-size: contain;
+	}
+	.ekit-template-content-header {
+    	top: -2px;
+	}
+	.category-wrapper .elementskit-info-image-box{
+		min-height: 172px;
+	}
+}
